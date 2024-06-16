@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background: linear-gradient(to right, #222831, #31363f);
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 70%;
+  height: 50px;
+  position: fixed;
+  transform: translateY(-20vh);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.search-box {
+  background: #eeeeee;
+  outline: none;
+  resize: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  text-align: left;
+  line-height: 50px;
+  padding: 0 3% 0;
+  z-index: 0;
+  box-sizing: border-box;
+  line-height: 50px;
+}
+
+button {
+  position: absolute;
+  background-color: #76abae;
+  color: #fff;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  border: none;
+  border-radius: 20px;
+  right: 0;
+  cursor: pointer;
+}
+
+button span {
+  transform: scale(0.9);
+  height: 50%;
+}
+
+button:hover {
+  background: #679597;
+  transition: 0.2s ease;
+}
+
+button:active {
+  background: #557a7c;
+  transform: scale(0.9);
+  transition: 0.2s ease;
+}
